@@ -1,7 +1,7 @@
 table {
     border: 1px slategray;
 }
-td,li:hover {
+td:hover {
     background-color: yellow;
     color: black;
 }
@@ -11,6 +11,10 @@ tr,th {
 }
 tr,td {
     background-color: white;
+    color: black;
+}
+li:hover {
+    background-color: yellow;
     color: black;
 }
 

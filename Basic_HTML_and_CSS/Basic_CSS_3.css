@@ -1,0 +1,10 @@
+li {
+    color: chartreuse;
+    background: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+li:hover {
+    background-color: yellow;
+    color: black;
+}

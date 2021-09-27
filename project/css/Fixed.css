@@ -21,3 +21,9 @@ h3 {
    display: flex;
    margin: auto;
 }
+.hammer {
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 0%;
+    padding-left: 5%;
+}

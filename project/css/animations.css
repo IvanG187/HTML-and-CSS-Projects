@@ -36,7 +36,7 @@ Menu Section animation
 Gallery Section Animation
 ==============================================================*/
 .photo {
-    position: absolute;
+    position: relative;
     line-height: 0;
     margin-bottom: 2em;
     overflow: hidden;
@@ -52,13 +52,9 @@ Gallery Section Animation
 .photo-container {
     text-align: center;
     margin: 15px auto;
-    width: 300px auto;
+    width: 300px;
     height: 169px;
-    
-   
   }
- 
-
 .photo-container img {
     max-width: 100%;
     width: 300px;
@@ -102,32 +98,3 @@ Photo Overlay Transitions
 .photo:hover img {
     transform: scale(1.1);
 }
-/*================================
-Media Quries
-================================*/
-@media all and (max-width: 640px) and (min-width: 381px) {
-    .head-main {
-        font-size: 28px;
-    }
-}
-@media all and (max-width: 381px) and (min-width: 200px) {
-    .head-main {
-        font-size: 24px;
-    }
-}
-@media (min-width: 768px) {
-    .photo-container {
-        width: 750px;
-    }
-}
-@media (min-width: 992px) {
-    .photo-container {
-        width: 970px;
-    }
-}
-@media (min-width: 1200px) {
-    .photo-container {
-        width: 1170px;
-    }
-}
-

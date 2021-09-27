@@ -36,7 +36,7 @@ h1::after {/* This is the underline */
     width: 150px;
     background: #E91C1C;
     margin: 5px auto 40px;
-    box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+    text-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 }
 h2 {
     line-height: 50px;
@@ -50,6 +50,7 @@ h4 {
     padding-top: 25px;
     line-height: 40px;
     padding-bottom: 0px;
+    font-size: 22px;
     font-weight: 900;
 }
 p {
@@ -93,7 +94,7 @@ section {
 .navbar:after {
     clear: both;
     display: table;
-    content: "";   
+    content: " ";   
 }
 .wrap {
     height: 100%;
@@ -107,7 +108,7 @@ section {
 .menu-container {
     max-height: 340px;
     margin: 0% auto;
-    content: "";
+    content: " ";
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -160,7 +161,7 @@ Home Section Styles
 Contact Styles
 ==================================*/
 .flex-container {
-    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -170,6 +171,14 @@ Contact Styles
 }
 #contact {
     background-color: #f5f3f3;
+}
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100,65,0.1);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
 }
 .reservation h2 {
     width: 70%;
@@ -192,6 +201,11 @@ Contact Styles
     letter-spacing: .4pt;
     word-spacing: .3pt;
 }
+.reservation p{
+    color: #13161B;
+    width: 50%;
+    margin: 0 auto;
+}
 .reservation form-rsvp {
     font-size: 15px;
     outline: none;
@@ -206,7 +220,7 @@ Contact Styles
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
     font-family: 'Raleway', sans-serif;
 }
-.reservation in[type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -223,7 +237,7 @@ Contact Styles
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
     font-family: 'Raleway', sans-serif;
 }
-.reservation in[type="text"]:hover {
+.reservation input[type="text"]:hover {
     box-shadow: 0 0 18px rgba(100,65,0,.8);
 }
 .form-spacer {
@@ -238,6 +252,7 @@ Contact Styles
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    float:right;
 }
 .terms:hover {
     color: orange;
@@ -260,9 +275,9 @@ Contact Styles
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
-.submit input[type="submit"] {
+.submit input[type="submit"]:hover {
     color: #000;
-    background-color: #8D8E8F;
+    background-color: #f2f9ff;
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
 }
 /*================================
@@ -275,3 +290,32 @@ Footer Styles
     padding: 20px 50px 20px 50px;
     text-align: right;
 }
+/*================================
+Media Quries
+================================*/
+@media all and (max-width: 640px) and (min-width: 381px) {
+    .head-main {
+        font-size: 28px;
+    }
+}
+@media all and (max-width: 381px) and (min-width: 200px) {
+    .head-main {
+        font-size: 24px;
+    }
+}
+@media (min-width: 768px) {
+    .photo-container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .photo-container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .photo-container {
+        width: 1170px;
+    }
+}
+
